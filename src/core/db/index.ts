@@ -1,2 +1,3 @@
 export { db } from "./client";
-export * from "./schema";
+export { authSchema } from "./schemas";
+export {} from "./client"

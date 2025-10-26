@@ -4,7 +4,7 @@ import { defineConfig } from "drizzle-kit";
 config({ path: ".env.local" });
 
 export default defineConfig({
-  schema: "./src/core/db/schema.ts",
+  schema: ["./src/core/db/schemas/*.schema.ts"],
   out: "./migrations",
   dialect: "turso",
   dbCredentials: {
