@@ -9,10 +9,8 @@ export function SignOutButton() {
   return (
     <Button
       type="submit"
-      className="cursor-pointer bg-red-500 hover:bg-red-400"
-      onClick={() =>
-        signOut()
-      }
+      className="cursor-pointer bg-red-500 hover:bg-red-400 text-white"
+      onClick={() => signOut()}
     >
       Sign Out
     </Button>

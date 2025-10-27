@@ -6,7 +6,7 @@ import {
 } from "./components/social-auth.icon";
 import { IconType, SupportedOauthProviders } from "./type";
 
-export const SUCCESS_CALLBACK_URL = "/";
+export const SUCCESS_CALLBACK_URL = "/home";
 export const ERROR_CALLBACK_URL = "/auth/signin";
 
 export const SUPPORTED_OAUTH_PROVIDERS = [
@@ -28,17 +28,17 @@ export const SUPPORTED_OAUTH_PROVIDERS_DETAILS: Record<
   google: {
     name: "Google",
     Icon: GoogleIcon,
-    style: "bg-blue-600 hover:bg-blue-600 hover:opacity-95",
+    style: "bg-blue-600 hover:bg-blue-600 hover:opacity-95 dark:text-white",
   },
   github: {
     name: "GitHub",
     Icon: GithubIcon,
-    style: "bg-black hover:opacity-95",
+    style: "bg-black hover:opacity-95 dark:text-white hover:dark:bg-white/2",
   },
   discord: {
     name: "Discord",
     Icon: DiscordIcon,
-    style: "bg-indigo-700 hover:bg-indigo-700 hover:opacity-95",
+    style: "bg-indigo-700 hover:bg-indigo-700 hover:opacity-95 dark:text-white",
   },
   twitter: {
     name: "X",

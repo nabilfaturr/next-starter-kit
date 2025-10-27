@@ -7,7 +7,7 @@ type AuthPageProps = {
 
 export default function AuthPage({ type }: AuthPageProps) {
   return (
-    <LayoutProvider className="border">
+    <LayoutProvider>
       <SocialAuthCard auth={type} />
     </LayoutProvider>
   );

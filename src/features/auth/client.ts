@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { createAuthClient } from "better-auth/react";
+import { createAuthClient, ErrorContext } from "better-auth/react";
 import { SupportedOauthProviders } from "./type";
 import { ERROR_CALLBACK_URL, SUCCESS_CALLBACK_URL } from "./constant";
 
@@ -9,7 +9,7 @@ const authClient = createAuthClient({});
 
 type CustomFetchOptions = {
   onSuccess?: () => void;
-  onError?: (error: any) => void;
+  onError?: (error: ErrorContext) => void;
 };
 
 type SignInSocialParams = {
